@@ -1,0 +1,24 @@
+{
+  "name": "getir-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --detectOpenHandles --force-exit",
+    "dev": "export NODE_ENV=dev && nodemon --watch './database' --watch './routes' --watch './'",
+    "prod": "export NODE_ENV=prod && npm run start"
+  },
+  "keywords": [],
+  "author": "Caner Siris",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.14",
+    "supertest": "^6.1.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.6.8"
+  }
+}
