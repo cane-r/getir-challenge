@@ -49,9 +49,9 @@ record.getRecords = (startDate,endDate,maxCount,minCount) => {
       }
     ] , function(err, result) {
           if (err) {
-             return reject(err);
+            return reject(err);
           }
-             return resolve(result);
+            return resolve(result);
         });
   });
 };
